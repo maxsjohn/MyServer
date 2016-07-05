@@ -9,8 +9,6 @@ var contents = fs.readFileSync('package.json').toString();
 
 var server = http.createServer(function (request , response) {
     response.writeHead(200,{"Content-Type" : "text/plain"});
-    console.log("hhhh");
-    response.toString("dmdmd");
     response.end("Hello World12\n" +contents);
 
 });
